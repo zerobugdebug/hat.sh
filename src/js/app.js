@@ -5,7 +5,7 @@ const popperjs = require('popper.js');
 const zxcvbn = require('zxcvbn');
 const AWS = require('aws-sdk');
 console.info("AWS =", AWS);
-console.info("process.env=", process.env);
+console.info("process.env.AWS_ACCESS_KEY_ID=", process.env.AWS_ACCESS_KEY_ID);
 
 //const credentials = new AWS.SharedIniFileCredentials({ profile: 'default' });
 //console.info("credentials =", credentials)

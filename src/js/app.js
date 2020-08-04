@@ -1,4 +1,5 @@
 //require the dependencies
+const dotenv = require('dotenv').config()
 const bootstrap = require('bootstrap');
 var $ = require("jquery");
 const popperjs = require('popper.js');

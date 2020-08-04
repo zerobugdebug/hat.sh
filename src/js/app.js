@@ -4,11 +4,12 @@ var $ = require("jquery");
 const popperjs = require('popper.js');
 const zxcvbn = require('zxcvbn');
 const AWS = require('aws-sdk');
-console.info("AWS =", AWS)
+console.info("AWS =", AWS);
+console.info("process.env=", process.env);
 
-const credentials = new AWS.SharedIniFileCredentials({ profile: 'default' });
-console.info("credentials =", credentials)
-AWS.config.credentials = credentials;
+//const credentials = new AWS.SharedIniFileCredentials({ profile: 'default' });
+//console.info("credentials =", credentials)
+//AWS.config.credentials = credentials;
 
 AWS.config.update({ region: 'ca-central-1' });
 console.info("AWS =", AWS)
